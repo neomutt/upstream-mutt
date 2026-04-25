@@ -9300,14 +9300,14 @@ commented out define the default configuration of the lists.
 # text/x-vcard and application/pgp parts. (PGP parts are already known
 # to mutt, and can be searched for with ~g, ~G, and ~k.)
 #
-# I've added x-pkcs7 to this, since it functions (for S/MIME)
+# I've added pkcs7 to this, since it functions (for S/MIME)
 # analogously to PGP signature attachments. S/MIME isn't supported
 # in a stock mutt build, but we can still treat it specially here.
 #
 </emphasis>
 attachments   +A */.*
 attachments   -A text/x-vcard application/pgp.*
-attachments   -A application/x-pkcs7-.*
+attachments   -A application/pkcs7-.*
 
 <emphasis role="comment">
 # Discount all MIME parts with an "inline" disposition, unless they're

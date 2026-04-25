@@ -94,5 +94,5 @@ to get a valid certificate outside of mutt. (See above)
 
 A certificate can be viewed by adding the following to your ~/.mailcap:
 
-application/x-pkcs7-signature;openssl pkcs7 -in %s -inform der -noout \
+application/pkcs7-signature;openssl pkcs7 -in %s -inform der -noout \
 -print_certs -text | less; needsterminal

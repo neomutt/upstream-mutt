@@ -3904,7 +3904,7 @@ struct option_t MuttVars[] = {
   /*
   ** .pp
   ** This format string specifies a command which is used to decrypt
-  ** \fCapplication/x-pkcs7-mime\fP attachments.
+  ** \fCapplication/pkcs7-mime\fP attachments.
   ** .pp
   ** The OpenSSL command formats have their own set of \fCprintf(3)\fP-like sequences
   ** similar to PGP's:
@@ -4091,7 +4091,7 @@ struct option_t MuttVars[] = {
   /*
   ** .pp
   ** This command is used to created S/MIME signatures of type
-  ** \fCapplication/x-pkcs7-signature\fP, which can only be handled by mail
+  ** \fCapplication/pkcs7-signature\fP, which can only be handled by mail
   ** clients supporting the S/MIME extension.
   ** .pp
   ** This is a format string, see the $$smime_decrypt_command command for
@@ -4118,7 +4118,7 @@ struct option_t MuttVars[] = {
   /*
   ** .pp
   ** This command is used to verify S/MIME signatures of type
-  ** \fCapplication/x-pkcs7-mime\fP.
+  ** \fCapplication/pkcs7-mime\fP.
   ** .pp
   ** This is a format string, see the $$smime_decrypt_command command for
   ** possible \fCprintf(3)\fP-like sequences.
